@@ -7,7 +7,7 @@ slider.oninput = function() {
     output.innerHTML = slider.value + " $";
 }
 
-/*---------Script for empty fields check (instead of "required" property)--------------
+/*---------Skrypt do wyświetlania obowiązkowych inputów, gdy są puste. Na razie zajmuje się tym właściwość "required" w tagach--------------
 
 btn = document.getElementById("button");
 
