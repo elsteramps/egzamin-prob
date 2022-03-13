@@ -21,6 +21,10 @@ body{
     max-width: 1100px;
 }
 
+h1{
+    text-align: center;
+}
+
 .header{
     position: fixed;
     width: 100%;
@@ -88,6 +92,15 @@ main .container{
     margin-top: calc(20em - 80px);
 }
 
+main .container_how_to_apply{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: calc(15em - 80px);
+}
+
+
+
 .intro__info{
     max-width: 570px;
     margin: 0;
@@ -149,6 +162,12 @@ main .container{
     font-size: 20px;
     font-family: "Font Awesome 5 Free";
     color: var(--accent-color);
+}
+
+.form_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem
 }
 
 form{

@@ -1,6 +1,8 @@
 var slider = document.getElementById("myRange");
 var output = document.getElementById("value");
-output.innerHTML = slider.value + " $"; // Wyświetla domyślną wartość pod sliderem
+
+// Wyświetla domyślną wartość pod sliderem
+output.innerHTML = slider.value + " $";
 
 // Zapisuje nową wartość i ją wyświetla
 slider.oninput = function() {
