@@ -38,7 +38,7 @@ h1{
     font-size: xx-large;
     font-weight: 900;
     color: var(--main-color);
-    margin-left: 20px;
+    margin-left: 10px;
     z-index: 1;
 }
 
@@ -110,12 +110,15 @@ main .container_how_to_apply{
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-color);
+    margin-left: 60px;
 }
 
 .intro__info h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--main-color);
+    text-align: left;
+    margin-left: 55px;
 }
 
 .intro__info-icons{
@@ -172,7 +175,7 @@ main .container_how_to_apply{
 
 form{
     width: 380px;
-    height: 400px;
+    height: 420px;
     background-color: white;
     box-shadow: 0 0 5px rgb(0, 0, 0);
     border-radius: 8px;
@@ -263,25 +266,83 @@ form{
     background-color: rgb(20, 158, 80);
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+    background-color: #fefefe;
+    margin: 25% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30rem; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .btn-close {
+    margin-top: 5px;
+    width: 3em;
+    height: 3em;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--accent-color);
+    transition: 0.2s;
+}
+
+
+.close{
+    font-size: xx-large;
+}
+  
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
 @media(max-width: 1050px) {
     main .container{
         flex-direction: column;
     }
 
     form{
-        margin-top: 100px;
+        margin-top: 80px;
+        margin-bottom: 20px;
     }
+
+    /* .wrapper h1{
+        margin: 100px 0px 50px 0;
+    } */
     
 }
+
+
 
 @media(max-width: 700px){
     .header__burger{
         display: block;
-        position: relative;
+        position: fixed;
         width: 30px;
         height: 20px;
         z-index: 3;
-        left: 15%;
+        left: 90%;
         margin-right: 0;
     }
 
