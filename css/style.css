@@ -183,6 +183,15 @@ form{
     margin: 0;
 }
 
+.alert-fields{
+    display: none;
+    color: red;
+}
+
+.active{
+    display: block;
+}
+
 
 .form h2{
     font-size: 2rem;
@@ -281,19 +290,27 @@ form{
   
   /* Modal Content/Box */
   .modal-content {
-      display: flex;
-      align-items: center;
-      border-radius: 10px;
+      display: block;
     background-color: #fefefe;
+    border-radius: 7px;
     margin: 25% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 30rem; /* Could be more or less, depending on screen size */
+  }
+
+  .btn-wrapper{
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .modal-text{
+      margin: 10px;
   }
   
   /* The Close Button */
   .btn-close {
-    margin-top: 5px;
+    margin: 5px;
     width: 3em;
     height: 3em;
     color: #fff;
