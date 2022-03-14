@@ -34,20 +34,20 @@ btn.addEventListener('click', (e) => {
 
     modal.style.display = 'block'
 
-    fetch ('http://localhost:3000/clients', {
-        method: 'POST',
-        'headers': {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(client)
-    })
-    .then(response => response.json())
-    .then(data => {
-    console.log('Success:', data);
-    })
-    .catch((error) => {
-    console.error('Error:', error);
-    });
+    // fetch ('http://localhost:3000/clients', {
+    //     method: 'POST',
+    //     'headers': {
+    //         'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(client)
+    // })
+    // .then(response => response.json())
+    // .then(data => {
+    // console.log('Success:', data);
+    // })
+    // .catch((error) => {
+    // console.error('Error:', error);
+    // });
 }
 
 else{

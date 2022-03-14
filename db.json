@@ -1,3 +1,16 @@
 {
-  "clients": []
+  "clients": [
+    {
+      "name": "houh",
+      "email": "jlkjhkljhl",
+      "value": "10741 $",
+      "id": 1
+    },
+    {
+      "name": "hkjlh",
+      "email": "kljbkbik",
+      "value": "37556 $",
+      "id": 2
+    }
+  ]
 }
